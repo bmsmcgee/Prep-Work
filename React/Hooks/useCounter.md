@@ -41,7 +41,7 @@ const useCounter = (
   // Why useRef?
   // - It persists across renders without cause re-render.
   // - It lets reset() always go back to the original initial value.
-  const initialRef - useRef<number>(initialValue);
+  const initialRef = useRef<number>(initialValue);
 
   // Main counter state. Triggers re-renders when updated.
   const [count, setCount] = useState<number>(initialValue);
