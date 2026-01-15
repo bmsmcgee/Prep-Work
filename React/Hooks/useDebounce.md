@@ -4,7 +4,7 @@
 
 Implement a `useDebounce` hook that delays state updates until a specified `delay` has passed without any further changes to the provided `value`.
 
-```ts'
+```ts
 export default function Component() {
   const [keyword, setKeyword] = useState('');
   const debouncedKeyword = useDebounce(keyword, 1000);
